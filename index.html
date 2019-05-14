@@ -7,6 +7,9 @@
     <title>Playground</title>
 </head>
 <body>
-    
+    <a href="javascript: (function () { 
+        const orig = document.body.style.cssText;
+        const removeStyle = `${orig} #error_container {display: none !important;}`
+     }());">Removal</a>
 </body>
 </html>
