@@ -8,8 +8,9 @@
 </head>
 <body>
     <a href="javascript: (function () { 
-        const orig = document.body.style.cssText;
-        const removeStyle = `${orig} #error_container {display: none !important;}`
+        const orig = document.body.innerHTML;
+        const newText = orig + '<style>#error_container {display: none !important;}</style>';
+        document.body.innerHTML = newText;
      }());">Removal</a>
 </body>
 </html>
